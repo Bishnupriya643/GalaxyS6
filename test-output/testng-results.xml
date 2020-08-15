@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="1" passed="0">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="571" started-at="2020-08-13T05:20:54Z" finished-at="2020-08-13T05:20:54Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="571" started-at="2020-08-13T05:20:54Z" finished-at="2020-08-13T05:20:54Z">
+      <class name="com.autodeskcrm.contacttest.ContactTest">
+        <test-method status="FAIL" signature="createContact()[pri:0, instance:com.autodeskcrm.contacttest.ContactTest@553a3d88]" name="createContact" duration-ms="551" started-at="2020-08-13T05:20:54Z" finished-at="2020-08-13T05:20:54Z">
+          <exception class="java.sql.SQLException">
+            <message>
+              <![CDATA[Unable to load authentication plugin 'caching_sha2_password'.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.sql.SQLException: Unable to load authentication plugin 'caching_sha2_password'.
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:569)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:537)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:527)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:512)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:480)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:498)
+at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:494)
+at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:78)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1634)
+at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:637)
+at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:351)
+at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:224)
+at java.sql.DriverManager.getConnection(Unknown Source)
+at java.sql.DriverManager.getConnection(Unknown Source)
+at com.autodeskcrm.contacttest.ContactTest.createContact(ContactTest.java:29)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+at java.lang.reflect.Method.invoke(Unknown Source)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:114)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.mysql.cj.core.exceptions.WrongArgumentException: Unable to load authentication plugin 'caching_sha2_password'.
+at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at sun.reflect.NativeConstructorAccessorImpl.newInstance(Unknown Source)
+at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(Unknown Source)
+at java.lang.reflect.Constructor.newInstance(Unknown Source)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:54)
+at com.mysql.cj.core.exceptions.ExceptionFactory.createException(ExceptionFactory.java:73)
+at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.proceedHandshakeWithPluggableAuthentication(MysqlaAuthenticationProvider.java:564)
+at com.mysql.cj.mysqla.authentication.MysqlaAuthenticationProvider.connect(MysqlaAuthenticationProvider.java:204)
+at com.mysql.cj.mysqla.io.MysqlaProtocol.connect(MysqlaProtocol.java:1361)
+at com.mysql.cj.mysqla.MysqlaSession.connect(MysqlaSession.java:132)
+at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:1754)
+at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:1624)
+... 31 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.sql.SQLException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createContact -->
+      </class> <!-- com.autodeskcrm.contacttest.ContactTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
